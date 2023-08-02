@@ -2,14 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-
 from polls.models import Question, Choice
-from django.http import HttpResponse
 
-# Create your views here
-
+# View index ... carregada para alguma rota (caminho)
 def index(request):
-    return HttpResponse('Olá... seja bem vindo à enquete')
+    #return HttpResponse('Olá... seja bem vubdi à enquete')
+    context = {'titulo' : 'Página Principal'}
+    return render('Olá... seja bem vindo à enquete')
 
 def sobre(request):
     return HttpResponse('Olá este é um app de enquete')
