@@ -1,2 +1,0 @@
-"#django-polls" 
-"#django-polls" 
